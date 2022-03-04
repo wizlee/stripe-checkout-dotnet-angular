@@ -1,6 +1,5 @@
 ## 🧾Summary
 
-This is the Dotnet + Angular base repo for the [Learning Loop Stripe Checkout Challenge](https://www.learningloop.org/beta-swe).
 This is the result [after a few days of learning and exploring](https://github.com/wizlee/learning-loop-beta/).
 
 ## Details
