@@ -20,13 +20,13 @@ This is the result [after a few days of learning and exploring](https://github.c
 > These are for understanding purposes and are optional before using this repo.
 
 1. `dotnet new angular -n DotnetAngularStripeExample -o dotnet-angular-stripe-example` 
-  - It uses the angular template to create a dotnet core web project
-  - Use `DotnetAngularStripeExample` as it's project name
-  - Create the project inside a new folder called `dotnet-angular-stripe-example`
-  - There are more options and available including [generating code for authentication](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-api-authorization?view=aspnetcore-6.0).
-    - Just need to append `-au Individual` to the dotnet new command. There are even [more advanced code generation](https://stackoverflow.com/questions/59927217/net-core-3-1-built-in-angular-spa-template-customize-login-register-template) by installing `dotnet-aspnet-codegenerator` tool.
-    - However all that are redundant for the purpose of of this learning process.
-  - We will remove the unused parts even from this minimal generated code in later steps.
+    - It uses the angular template to create a dotnet core web project
+    - Use `DotnetAngularStripeExample` as it's project name
+    - Create the project inside a new folder called `dotnet-angular-stripe-example`
+    - There are more options and available including [generating code for authentication](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-api-authorization?view=aspnetcore-6.0).
+        - Just need to append `-au Individual` to the dotnet new command. There are even [more advanced code generation](https://stackoverflow.com/questions/59927217/net-core-3-1-built-in-angular-spa-template-customize-login-register-template) by installing `dotnet-aspnet-codegenerator` tool.
+        - However all that are redundant for the purpose of of this learning process.
+    - We will remove the unused parts even from this minimal generated code in later steps.
 2. `cd dotnet-angular-stripe-example`
 3. The angular app that comes with the template is Angular 8, we are going to [upgrade it to Angular 12](https://www.freecodespot.com/blog/angular-with-dotnet-core-web-api/).
 4. To do that, we can either use [`ng update`](https://update.angular.io/?v=8.2-13.0) or recreate it using `ng new`. This project uses the later method.
