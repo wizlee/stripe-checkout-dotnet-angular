@@ -34,9 +34,9 @@ This is the result [after a few days of learning and exploring](https://github.c
 6. Install Angular CLI globally by running `npm install -g @angular/cli`.
 7. Re-create the Angular App by running `ng new ClientApp --defaults=true --minimal=true`.
 8. Remove the following WeatherForecast controller related files. Also add an empty file called `.gitkeep` to keep the empty folder in source control.
-  - WeatherForecast.cs
-  - Controllers/WeatherForecastController.cs
+    - WeatherForecast.cs
+    - Controllers/WeatherForecastController.cs
 9. Run `dotnet run` to make sure everything is still working. You should see the default Angular welcome page.
 10. Profit 💰
-  - Although all these steps are already completed in this repo, it will be valuable to go through it if you are not familar with aspnet core and Angular.
-  - For example, [a reference to how the original Angular App fetch the mock weather data from the aspnet core](https://github.com/wizlee/learning-loop-beta/blob/4e25dcc1fec7e03ce4f0f3b433839972d84c022d/dotnet-angular-stripe-example/ClientApp/src/app/fetch-data/fetch-data.component.ts).
+    - Although all these steps are already completed in this repo, it will be valuable to go through it if you are not familar with aspnet core and Angular.
+    - For example, [a reference to how the original Angular App fetch the mock weather data from the aspnet core](https://github.com/wizlee/learning-loop-beta/blob/4e25dcc1fec7e03ce4f0f3b433839972d84c022d/dotnet-angular-stripe-example/ClientApp/src/app/fetch-data/fetch-data.component.ts).
