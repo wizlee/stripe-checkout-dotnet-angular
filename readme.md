@@ -2,14 +2,20 @@
 
 This is the result [after a few days of learning and exploring](https://github.com/wizlee/learning-loop-beta/).
 
-## Details
+## How to use this repo
 - ⏮ Prerequisite
   - dotnet core installed
   - comfortable with command line OR install Visual Studio Community
 - 🛠 Options
   - Using VS Code or any other lightweight IDE + command line
   - Or, download and install the latest Visual Studio Comunity edition
+- 🖥 To run this project
+  1. change directory to this folder
+  2. Run `dotnet restore`
+  3. Following by `dotnet run` to start the dotnet core backend and Angular frontend
 
+
+## History
 > The steps below are how this repo are created from scratch using VS Code with dotnet CLI only. 
 > These are for understanding purposes and are optional before using this repo.
 - 🏗 Steps for recreating this project
