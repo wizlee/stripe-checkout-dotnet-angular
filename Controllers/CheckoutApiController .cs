@@ -22,8 +22,7 @@ namespace DotnetAngularStripeExample.Controllers
             };
             var service = new SessionService();
             Session session = service.Create(options);
-            Response.Headers.Add("Location", session.Url);
-            return new StatusCodeResult(303);
+            return Json(session);
         }
     }
 }

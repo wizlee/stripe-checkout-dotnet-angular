@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { switchMap } from 'rxjs/operators';
-import { StripeService } from 'ngx-stripe';
+import { map } from 'rxjs/operators';
+import { StripeService } from 'ngx-stripe'
 
 @Component({
   selector: 'app-root',
@@ -21,21 +21,23 @@ export class AppComponent {
     // Check the server.js tab to see an example implementation
     this.http.post<Session>('/create-checkout-session', {})
       .pipe(
-        switchMap(session => {
-          return this.stripeService.redirectToCheckout({ sessionId: session.id })
-        })
+        map(session => session.url)
+        // switchMap(session => {
+        //   window.location.href = session.url;
+        //   return this.stripeService.redirectToCheckout({ sessionId: session.id })
+        // })
       )
-      .subscribe(result => {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, you should display the localized error message to your
-        // customer using `error.message`.
-        if (result.error) {
-          alert(result.error.message);
+      .subscribe(redirectUrl => {
+        if (!redirectUrl) {
+          alert("invalid stripe redirect URL");
+        }
+        else {
+          window.location.href = redirectUrl;
         }
       });
   }
 }
 
 interface Session {
-  id: string;
+  url: string;
 }
